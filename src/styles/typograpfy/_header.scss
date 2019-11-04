@@ -1,0 +1,18 @@
+.header {
+	font-family: $font-1;
+	color: white;
+	font-weight: 500;
+
+	&__h1 {
+		font-size: 3rem;
+	}
+
+	&__color {
+		font-size: 6rem;
+		padding: 1rem 0;
+	}
+
+	&__p {
+		font-size: 3rem;
+	}
+}
