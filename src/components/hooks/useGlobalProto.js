@@ -21,7 +21,6 @@ const useGlobalProto = () => {
 				this.menuMessage.textContent = 'Correct!';
 			});
 		} else {
-			console.log(box);
 			box.style.opacity = '0';
 			this.menuMessage.textContent = 'Try Again...';
 		}

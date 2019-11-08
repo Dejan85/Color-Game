@@ -1,18 +1,18 @@
-const useClickEvent = (dom) => {
+const useClickEvent = () => {
 	const difficult = function() {
-		dom.btns.forEach((item) => {
+		this.btns.forEach((item) => {
 			item.onclick = () => {
-				dom.createBoxes(item);
-				dom.colorBoxes();
-				dom.headerGenerateColor();
+				this.createBoxes(item);
+				this.colorBoxes();
+				this.headerGenerateColor();
 			};
 		});
 	};
 
 	const newColor = function() {
-		dom.newColor.onclick = () => {
-			dom.colorBoxes();
-			dom.headerGenerateColor();
+		this.newColor.onclick = () => {
+			this.colorBoxes();
+			this.headerGenerateColor();
 		};
 	};
 

@@ -4,10 +4,10 @@ import useClickEvent from './hooks/useClickEvent';
 
 const { dom } = useDom();
 useGlobalProto();
-const { difficult, newColor } = useClickEvent(dom);
+const { difficult, newColor } = useClickEvent();
 
 dom.createBoxes();
 dom.colorBoxes();
 dom.headerGenerateColor();
-difficult();
-newColor();
+difficult.call(dom);
+newColor.call(dom);
