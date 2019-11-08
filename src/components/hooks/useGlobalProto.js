@@ -1,5 +1,4 @@
 const useGlobalProto = () => {
-	// const colors = new Array([]);
 	Object.prototype.colors = [];
 
 	//generate random color
@@ -27,8 +26,6 @@ const useGlobalProto = () => {
 			this.menuMessage.textContent = 'Try Again...';
 		}
 	};
-
-	return { colors };
 };
 
 export default useGlobalProto;
